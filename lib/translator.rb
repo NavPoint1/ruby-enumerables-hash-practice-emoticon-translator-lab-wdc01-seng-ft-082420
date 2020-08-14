@@ -3,7 +3,9 @@ require "yaml"
 def load_library(path)
   # code goes here
   library = YAML.load_file(path)
-  library
+  library.map { |key, value|
+    library[key] = 
+  }
 end
 
 def get_japanese_emoticon
