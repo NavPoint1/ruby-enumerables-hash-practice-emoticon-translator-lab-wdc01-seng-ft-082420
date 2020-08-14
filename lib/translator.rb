@@ -3,13 +3,12 @@ require "yaml"
 def load_library(path)
   # code goes here
   library = YAML.load_file(path)
-  library.map { |key, value|
+  return library.map { |key, value|
     library[key] = {
       english: library[key][0],
       japanese: library[key][1]
     }
   }
-  library
 end
 
 def get_japanese_emoticon
