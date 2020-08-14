@@ -9,7 +9,6 @@ def load_library(path)
       japanese: library[key][1]
     }
   }
-  p library
 end
 
 def get_japanese_emoticon
