@@ -26,5 +26,5 @@ def get_english_meaning(path, jpn_emoticon)
   name = library.find { |key, value|
     value[:japanese] == jpn_emoticon
   }
-  name
+  p name
 end
