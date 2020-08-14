@@ -29,5 +29,5 @@ def get_english_meaning(path, jpn_emoticon)
       name = key
     end
   }
-  p name
+  name
 end
