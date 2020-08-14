@@ -14,9 +14,15 @@ end
 
 def get_japanese_emoticon(path, eng_emoticon)
   # code goes here
-  #library = load_library(path)
+  library = load_library(path)
+  jpn_emoticon = ''
   
-  #jpn_emoticon = 
+  library.each { |key, value|
+    if value[:english] == eng_emoticon
+      jpn_emoticon = value[:japanese]
+    end
+  }
+  jpn_emoticon
 end
 
 def get_english_meaning(path, jpn_emoticon)
