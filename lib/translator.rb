@@ -22,7 +22,7 @@ end
 def get_english_meaning(path, jpn_emoticon)
   # code goes here
   library = load_library(path)
-  name = ''
+  name = 'Sorry, that emoticon was not found'
   
   library.each { |key, value|
     if value[:japanese] == jpn_emoticon
